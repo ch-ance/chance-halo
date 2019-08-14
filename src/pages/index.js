@@ -11,6 +11,7 @@ const IndexPage = () => (
       description="Personal site for Chance Embrey-Farquhar"
     />
 
+    {/* Header */}
     <header>
       <h1>Chance Embrey-Farquhar</h1>
       <ul id="contact-links">
@@ -39,6 +40,43 @@ const IndexPage = () => (
         </li>
       </ul>
     </header>
+
+    {/* Main */}
+    <section className="main">
+      <section className="topic" id="objective">
+        <h2>What I'm up to</h2>
+        <div className="update-container">
+          <div className="update-box"> Some stuff</div>
+          <div className="update-box"> Other stuff</div>
+        </div>
+      </section>
+      <section className="topic" id="skills">
+        <h2>Technical Skills:</h2>
+        <ul id="skills-list">
+          <li>Javascript</li>
+          <li>Java</li>
+          <li>Python</li>
+          <li>React</li>
+        </ul>
+        <ul id="skills-list">
+          <li>Typescript</li>
+          <li>PostgreSQL</li>
+          <li>NodeJS</li>
+          <li>CSS3</li>
+        </ul>
+      </section>
+
+      <section className="topic" id="experience">
+        <h2>Relevant experience: </h2>
+        <ul id="exp-list">
+          <li>Lambda School</li>
+        </ul>
+      </section>
+
+      <footer>
+        <span>@Copyright 2019 Chance Embrey-Farquhar</span>
+      </footer>
+    </section>
   </section>
 )
 
