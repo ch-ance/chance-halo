@@ -1,21 +1,45 @@
 import React from "react"
-import { Link } from "gatsby"
-
-import Layout from "../components/layout"
-import Image from "../components/image"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faMobileAlt, faEnvelope } from "@fortawesome/free-solid-svg-icons"
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
 import SEO from "../components/seo"
 
 const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
+  <section className="content">
+    <SEO
+      title="Chance Halo"
+      description="Personal site for Chance Embrey-Farquhar"
+    />
+
+    <header>
+      <h1>Chance Embrey-Farquhar</h1>
+      <ul id="contact-links">
+        <li>
+          <a href="tel:+18163856369">
+            <FontAwesomeIcon icon={faMobileAlt} />
+          </a>
+        </li>
+        <li>
+          <a href="mailto:cembreyfarquhar@gmail.com">
+            <FontAwesomeIcon icon={faEnvelope} />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.github.com/cembreyfarquhar" target="_blank">
+            <FontAwesomeIcon icon={faGithub} />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/chance-embrey-farquhar/"
+            target="_blank"
+          >
+            <FontAwesomeIcon icon={faLinkedin} />
+          </a>
+        </li>
+      </ul>
+    </header>
+  </section>
 )
 
 export default IndexPage
