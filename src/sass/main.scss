@@ -1,0 +1,15 @@
+.background {
+    background-image: url("../images/woodenbackground.png");
+    min-height: 100%;
+}
+
+.content {
+    width: 80%;
+    height: 95vh;
+    max-width: 800px;
+    margin: 0 auto;
+    background-image: url("../images/ricepaper_v3.png");
+    background-repeat: repeat;
+    border-radius: 2px;
+    box-shadow: 0 19px 38px rgba(0,0,0,.9), 0 15px 12px rgba(0,0,0,0.85);
+}
