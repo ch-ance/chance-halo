@@ -4,12 +4,8 @@
 }
 
 .content {
-    width: 80%;
-    height: 95vh;
-    max-width: 800px;
+    width: 90%;
     margin: 0 auto;
-    background-image: url("../images/ricepaper_v3.png");
-    background-repeat: repeat;
     border-radius: 2px;
     box-shadow: 0 19px 38px rgba(0,0,0,.9), 0 15px 12px rgba(0,0,0,0.85);
 
@@ -19,6 +15,7 @@
         align-items: center;
         margin: 3% 0;
         padding: 5% 0;
+        background-image: linear-gradient(to bottom,#55A3FA,#A8CFFA);
 
         h1 {
             font-size: 2.4rem;
@@ -48,9 +45,16 @@
         margin: 2% 4%;
 
         .topic {
-            h2 {
+            h3 {
                 font-size: 1.6rem;
-                margin: 2%;
+                letter-spacing: .15rem;
+                display: flex;
+                justify-content: center;
+            }
+            h4 {
+                display: flex;
+                justify-content: center;
+                font-size: 1.2rem;
             }
 
             p {
