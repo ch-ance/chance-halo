@@ -64,13 +64,20 @@
         .update-container {
             display: flex;
             border: 1px solid red;
-            justify-content: space-evenly;
-        }
-
-        .update-box {
-            height: 100%;
+            border-radius: 2%;
+            justify-content: space-between;
             min-height: 150px;
-            padding: 2%;
+            max-height: 250px;
+        
+            .working-on-container {
+
+                border-left: 1px solid lightblue;
+                padding-left: 2%;
+                width: 48%;
+                h3 {
+                    font-size: 1.2rem;
+                }
+            }
         }
 
         .skills {

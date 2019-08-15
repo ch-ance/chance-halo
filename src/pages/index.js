@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faMobileAlt, faEnvelope } from "@fortawesome/free-solid-svg-icons"
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
 import SEO from "../components/seo"
+import WorkingOn from "../components/WorkingOn"
 
 const IndexPage = () => (
   <div className="background">
@@ -48,7 +49,7 @@ const IndexPage = () => (
           <h2>What I'm up to</h2>
           <div className="update-container">
             <div className="update-box"> Some stuff</div>
-            <div className="update-box"> Other stuff</div>
+            <WorkingOn />
           </div>
         </section>
         <section className="topic" className="skills">
