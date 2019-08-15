@@ -4,6 +4,7 @@ import { faMobileAlt, faEnvelope } from "@fortawesome/free-solid-svg-icons"
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
 import SEO from "../components/seo"
 import Skill from "../components/Skill"
+import Projects from "../components/Projects"
 
 const IndexPage = () => {
   const [selectedSkill, setSelectedSkill] = useState(null)
@@ -31,13 +32,18 @@ const IndexPage = () => {
             </a>
           </li>
           <li>
-            <a href="https://www.github.com/cembreyfarquhar" target="_blank">
+            <a
+              href="https://www.github.com/cembreyfarquhar"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
               <FontAwesomeIcon icon={faGithub} />
             </a>
           </li>
           <li>
             <a
               href="https://www.linkedin.com/in/chance-embrey-farquhar/"
+              rel="noopener noreferrer"
               target="_blank"
             >
               <FontAwesomeIcon icon={faLinkedin} />
@@ -52,14 +58,14 @@ const IndexPage = () => {
           <h3>What Can I Do?</h3>
           {selectedSkill === null ? (
             <ul className="skills-list">
-              <Skill skill={"Javascript"} />
-              <Skill skill={"Python"} />
-              <Skill skill={"React"} />
-              <Skill skill={"Typescript"} />
-              <Skill skill={"PostgreSQL"} />
-              <Skill skill={"NodeJS"} />
-              <Skill skill={"Java"} />
-              <Skill skill={"C#"} />
+              <Skill skill={"Javascript"} selectSkill={selectSkill} />
+              <Skill skill={"Python"} selectSkill={selectSkill} />
+              <Skill skill={"React"} selectSkill={selectSkill} />
+              <Skill skill={"Typescript"} selectSkill={selectSkill} />
+              <Skill skill={"PostgreSQL"} selectSkill={selectSkill} />
+              <Skill skill={"NodeJS"} selectSkill={selectSkill} />
+              <Skill skill={"Java"} selectSkill={selectSkill} />
+              <Skill skill={"C#"} selectSkill={selectSkill} />
               {/* <li>Javascript</li>
               <li>Java</li>
               <li>Python</li>
@@ -70,7 +76,7 @@ const IndexPage = () => {
               <li>CSS3</li> */}
             </ul>
           ) : (
-            <h4>You selected a skill!</h4>
+            <Projects skill={selectedSkill} />
           )}
         </section>
 
@@ -87,6 +93,11 @@ const IndexPage = () => {
       </section>
     </section>
   )
+
+  function selectSkill(skill) {
+    setSelectedSkill(skill)
+    console.log("Selected ", skill)
+  }
 }
 
 export default IndexPage

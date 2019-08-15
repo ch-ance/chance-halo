@@ -1,10 +1,11 @@
 import React from "react"
 
-const Skill = ({ skill }) => {
+const Skill = ({ selectSkill, skill }) => {
   return (
     <li
       onClick={e => {
         e.preventDefault()
+        selectSkill(skill)
       }}
     >
       {skill}
