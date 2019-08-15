@@ -45,9 +45,10 @@ const IndexPage = () => (
 
     {/* Main */}
     <section className="main">
-      <section className="topic skills">
-        <h3>What Can I Do?</h3>
-        <h4>Click a tech to see it in action</h4>
+      <section className="topic skills" id="skills">
+        <a href="#skills">
+          <h3>What Can I Do?</h3>
+        </a>
         <ul className="skills-list">
           <li>Javascript</li>
           <li>Java</li>
