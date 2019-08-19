@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faMobileAlt, faEnvelope } from "@fortawesome/free-solid-svg-icons"
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
-import axios from "axios"
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+// import { faMobileAlt, faEnvelope } from "@fortawesome/free-solid-svg-icons"
+// import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
+// import axios from "axios"
 import projectsData from "../projectsData.json"
 import SEO from "../components/seo"
+import Header from "../components/Header"
 import Skill from "../components/Skill"
 import Projects from "../components/Projects"
 
@@ -16,9 +17,7 @@ const IndexPage = () => {
   useEffect(() => {
     const _fetchProjects = async () => {
       try {
-        // const fetchedProjects = await axios.get("asdfs.sdf")
         setProjects(projectsData)
-        console.log("FETCHED!!!: ", projectsData)
       } catch (error) {
         console.error(error)
       }
@@ -35,41 +34,7 @@ const IndexPage = () => {
       />
 
       {/* Header */}
-      <header>
-        <h1>Chance Embrey-Farquhar</h1>
-        <h2>Full-Stack Web Developer</h2>
-        <ul className="contact-links">
-          <li>
-            <a href="tel:+18163856369">
-              <FontAwesomeIcon icon={faMobileAlt} />
-            </a>
-          </li>
-          <li>
-            <a href="mailto:cembreyfarquhar@gmail.com">
-              <FontAwesomeIcon icon={faEnvelope} />
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.github.com/cembreyfarquhar"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <FontAwesomeIcon icon={faGithub} />
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/chance-embrey-farquhar/"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <FontAwesomeIcon icon={faLinkedin} />
-            </a>
-          </li>
-        </ul>
-      </header>
-
+      <Header />
       {/* Main */}
       <section className="main">
         <section className="topic skills" id="skills">
@@ -112,4 +77,40 @@ const IndexPage = () => {
   }
 }
 
+{
+  /* <header>
+<h1>Chance Embrey-Farquhar</h1>
+<h2>Full-Stack Web Developer</h2>
+<ul className="contact-links">
+  <li>
+    <a href="tel:+18163856369">
+      <FontAwesomeIcon icon={faMobileAlt} />
+    </a>
+  </li>
+  <li>
+    <a href="mailto:cembreyfarquhar@gmail.com">
+      <FontAwesomeIcon icon={faEnvelope} />
+    </a>
+  </li>
+  <li>
+    <a
+      href="https://www.github.com/cembreyfarquhar"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <FontAwesomeIcon icon={faGithub} />
+    </a>
+  </li>
+  <li>
+    <a
+      href="https://www.linkedin.com/in/chance-embrey-farquhar/"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <FontAwesomeIcon icon={faLinkedin} />
+    </a>
+  </li>
+</ul>
+</header> */
+}
 export default IndexPage
