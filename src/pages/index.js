@@ -1,13 +1,31 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faMobileAlt, faEnvelope } from "@fortawesome/free-solid-svg-icons"
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
+import axios from "axios"
+import projectsData from "../projectsData.json"
 import SEO from "../components/seo"
 import Skill from "../components/Skill"
 import Projects from "../components/Projects"
 
 const IndexPage = () => {
   const [selectedSkill, setSelectedSkill] = useState(null)
+
+  const [projects, setProjects] = useState([])
+
+  useEffect(() => {
+    const _fetchProjects = async () => {
+      try {
+        // const fetchedProjects = await axios.get("asdfs.sdf")
+        setProjects(projectsData)
+        console.log("FETCHED!!!: ", projectsData)
+      } catch (error) {
+        console.error(error)
+      }
+    }
+
+    _fetchProjects()
+  }, [])
 
   return (
     <section className="content">
@@ -55,7 +73,9 @@ const IndexPage = () => {
       {/* Main */}
       <section className="main">
         <section className="topic skills" id="skills">
-          <h3>What Can I Do?</h3>
+          <a href="#skills">
+            <h3>What Can I Do?</h3>
+          </a>
           {selectedSkill === null ? (
             <ul className="skills-list">
               <Skill skill={"Javascript"} selectSkill={selectSkill} />
@@ -66,17 +86,9 @@ const IndexPage = () => {
               <Skill skill={"NodeJS"} selectSkill={selectSkill} />
               <Skill skill={"Java"} selectSkill={selectSkill} />
               <Skill skill={"C#"} selectSkill={selectSkill} />
-              {/* <li>Javascript</li>
-              <li>Java</li>
-              <li>Python</li>
-              <li>React</li>
-              <li>Typescript</li>
-              <li>PostgreSQL</li>
-              <li>NodeJS</li>
-              <li>CSS3</li> */}
             </ul>
           ) : (
-            <Projects skill={selectedSkill} />
+            <Projects skill={selectedSkill} projects={projects} />
           )}
         </section>
 

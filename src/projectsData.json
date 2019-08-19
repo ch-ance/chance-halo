@@ -1,0 +1,12 @@
+{
+    "projects": [
+        {
+            "name": "RXiD",
+            "skills": ["Javascript", "PostgreSQL"]
+        },
+        {
+            "name": "Chatty",
+            "skills": ["Javascript", "PostgreSQL", "NodeJS"]
+        }
+    ]
+}
