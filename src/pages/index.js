@@ -1,8 +1,4 @@
 import React, { useState, useEffect } from "react"
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-// import { faMobileAlt, faEnvelope } from "@fortawesome/free-solid-svg-icons"
-// import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
-// import axios from "axios"
 import projectsData from "../projectsData.json"
 import SEO from "../components/seo"
 import Header from "../components/Header"
@@ -61,11 +57,18 @@ const IndexPage = () => {
           )}
         </section>
 
-        <section className="topic" className="experience">
-          <h3>Relevant experience: </h3>
-          <ul className="exp-list">
-            <li>Lambda School</li>
-          </ul>
+        <section className="topic" id="experience">
+          <h3>More About Me</h3>
+          <p>
+            I am a software engineer with a deep skillset in full-stack web
+            development. I gradudated from Lambda School in August 2019. In my
+            year at Lambda, I spent 40+ hours a week practicing full-stack web
+            development tools such as React and NodeJS, as well as crucial
+            computer science concepts such as data structures and time
+            complexity. I took two separate opportunites to become a Teaching
+            Assistant at Lambda, during which I mentored multiple groups of new
+            students on their path to becoming software developers.
+          </p>
         </section>
 
         <footer>

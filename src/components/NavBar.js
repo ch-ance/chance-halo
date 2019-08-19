@@ -5,13 +5,13 @@ const NavBar = () => {
     <nav>
       <ul>
         <li>
-          <a href="#chance-halo">CF</a>
+          <a href="#chance-halo">Contact</a>
         </li>
         <li>
           <a href="#skills">Projects</a>
         </li>
         <li>
-          <a href="#contact">Contact</a>
+          <a href="#experience">About Me</a>
         </li>
       </ul>
     </nav>
