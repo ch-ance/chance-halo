@@ -39,7 +39,7 @@ const IndexPage = () => {
       <section className="main">
         <section className="topic skills" id="skills">
           <a href="#skills">
-            <h3>What Can I Do?</h3>
+            <h3>Technical Skills</h3>
           </a>
           {selectedSkill === null ? (
             <ul className="skills-list">
@@ -53,7 +53,11 @@ const IndexPage = () => {
               <Skill skill={"C#"} selectSkill={selectSkill} />
             </ul>
           ) : (
-            <Projects skill={selectedSkill} projects={projects} />
+            <Projects
+              skill={selectedSkill}
+              projects={projects}
+              selectSkill={selectSkill}
+            />
           )}
         </section>
 

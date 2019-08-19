@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 a {
     all: unset;
     cursor: pointer;    
@@ -23,7 +27,7 @@ a {
         }
 
         nav {
-            width: 90%;
+            width: 99%;
             position: fixed;
             height: 10%;
             background: #55A3FA;
@@ -83,6 +87,8 @@ a {
         }
 
         .skills {
+            min-height: 100vh;
+            padding-top: 10%;
             ul {
                 display: flex;
                 display: flex;
