@@ -6,22 +6,6 @@ import Skill from "../components/Skill"
 import Projects from "../components/Projects"
 
 const IndexPage = () => {
-  const [selectedSkill, setSelectedSkill] = useState(null)
-
-  const [projects, setProjects] = useState([])
-
-  useEffect(() => {
-    const _fetchProjects = async () => {
-      try {
-        setProjects(projectsData)
-      } catch (error) {
-        console.error(error)
-      }
-    }
-
-    _fetchProjects()
-  }, [])
-
   return (
     <section className="content">
       <SEO
@@ -32,7 +16,7 @@ const IndexPage = () => {
       {/* Header */}
       <Header />
       {/* Main */}
-      <section className="main">
+      {/* <section className="main">
         <section className="topic" id="experience">
           <h3>A brief introduction</h3>
           <p>
@@ -53,14 +37,9 @@ const IndexPage = () => {
         <footer>
           <span>@Copyright 2019 Chance Embrey-Farquhar</span>
         </footer>
-      </section>
+      </section> */}
     </section>
   )
-
-  function selectSkill(skill) {
-    setSelectedSkill(skill)
-    console.log("Selected ", skill)
-  }
 }
 
 export default IndexPage
