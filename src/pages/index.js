@@ -2,8 +2,6 @@ import React, { useState, useEffect } from "react"
 import projectsData from "../projectsData.json"
 import SEO from "../components/seo"
 import Header from "../components/Header"
-import Skill from "../components/Skill"
-import Projects from "../components/Projects"
 
 const IndexPage = () => {
   return (

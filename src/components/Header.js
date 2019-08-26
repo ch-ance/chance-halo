@@ -3,18 +3,19 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faMobileAlt, faEnvelope } from "@fortawesome/free-solid-svg-icons"
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
 import NavBar from "./NavBar"
+import Button from "./Button"
 
 const Header = () => {
   return (
     <header id="chance-halo">
       {/* <NavBar /> */}
       <h1>Chance Embrey-Farquhar</h1>
-      <h2>Software Engineer</h2>
-      <h3>
-        This portfolio site is under active construction! Reach me anywhere
-        below to see what else I'm working on.
-      </h3>
-      <ul className="contact-links">
+      <h2>Software Engineer, Full-Stack Web Developer</h2>
+      <div className="buttons">
+        <Button to="projects" />
+        <Button to="contact" />
+      </div>
+      {/* <ul className="contact-links">
         <li>
           <a href="tel:+18163856369">
             <FontAwesomeIcon icon={faMobileAlt} />
@@ -43,7 +44,7 @@ const Header = () => {
             <FontAwesomeIcon icon={faLinkedin} />
           </a>
         </li>
-      </ul>
+      </ul> */}
     </header>
   )
 }
