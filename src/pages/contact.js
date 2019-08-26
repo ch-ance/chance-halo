@@ -14,11 +14,14 @@ const IndexPage = () => {
             <ul className="contact-links">
                 <li>
                     <a href="tel:+18163856369">
+                        <h3>Call or Text </h3>
                         <FontAwesomeIcon icon={faMobileAlt} />
                     </a>
                 </li>
                 <li>
                     <a href="mailto:cembreyfarquhar@gmail.com">
+
+                        <h3>E-mail</h3>
                         <FontAwesomeIcon icon={faEnvelope} />
                     </a>
                 </li>
@@ -28,6 +31,8 @@ const IndexPage = () => {
                         rel="noopener noreferrer"
                         target="_blank"
                     >
+
+                        <h3>GitHub</h3>
                         <FontAwesomeIcon icon={faGithub} />
                     </a>
                 </li>
@@ -37,6 +42,8 @@ const IndexPage = () => {
                         rel="noopener noreferrer"
                         target="_blank"
                     >
+
+                        <h3>Linked-in</h3>
                         <FontAwesomeIcon icon={faLinkedin} />
                     </a>
                 </li>

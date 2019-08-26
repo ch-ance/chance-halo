@@ -60,19 +60,32 @@ a {
 
         .contact-links {
             display: flex;
-            flex-wrap: wrap;
-            width: 50%;
+            width: 70%;
+            flex-direction: column;
+            align-items: flex-end;
+            height: 90%;
 
             li {
                 display: flex;
                 flex-grow: 1;
-                justify-content: center;
+                justify-content: space-between;
                 margin-top: 4%;
                 font-size: 3.6rem;
-            
+                width: 100%;
+                border-radius: 5px;
                 a {
                     color: black;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
                 }
+            }
+            li:nth-child(odd) {
+                background: #6596CC
+            }
+            li:nth-child(even) {
+                background: #BFDDFD
             }
         }
     
