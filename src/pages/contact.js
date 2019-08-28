@@ -4,9 +4,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faMobileAlt, faEnvelope } from "@fortawesome/free-solid-svg-icons"
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
 import NavBar from "../components/NavBar"
+import TopLinkButton from "../components/TopLinkButton";
 const IndexPage = () => {
     return (
         <section className="content">
+            <TopLinkButton />
             <SEO
                 title="Chance Halo"
                 description="Personal site for Chance Embrey-Farquhar"
