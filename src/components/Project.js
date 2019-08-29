@@ -28,12 +28,12 @@ const Project = ({ project, setProjectIndex, projectIndex }) => {
 
   function decrement(event) {
     event.preventDefault();
-    projectIndex >= 1 ? setProjectIndex(projectIndex - 1) : setProjectIndex(2)
+    projectIndex >= 1 ? setProjectIndex(projectIndex - 1) : setProjectIndex(3)
   }
 
   function increment(event) {
     event.preventDefault();
-    projectIndex < 2 ? setProjectIndex(projectIndex + 1) : setProjectIndex(0)
+    projectIndex < 3 ? setProjectIndex(projectIndex + 1) : setProjectIndex(0)
   }
 }
 

@@ -4,6 +4,8 @@ import Project from "../components/Project"
 import rxidWeb from "../images/rxidweb.gif"
 import chattyWeb from "../images/chattyweb.gif"
 import snj from "../images/snj.gif"
+import impython from "../images/impython.gif"
+
 const Projects = () => {
   const [projectIndex, setProjectIndex] = useState(0)
 
@@ -31,9 +33,18 @@ const Projects = () => {
       webImageSrc: snj,
       codeImageSrc: "",
       topInfo:
-        "SnJ Architects was used to show mastery of HTML5, CSS, and Javascript fundementals. \n\nLess preprocessing was used in conjuntion with semantic HTML and vanilla Javascript DOM manipulation. Also, if you type \"bananas\" while viewing the page, a bunch of dancing bananas pop up on the screen.",
+        'SnJ Architects was used to show mastery of HTML5, CSS, and Javascript fundementals. \n\nLess preprocessing was used in conjuntion with semantic HTML and vanilla Javascript DOM manipulation. Also, if you type "bananas" while viewing the page, a bunch of dancing bananas pop up on the screen.',
       url: "https://www.snjarchitects.netlify.com",
       github: "https://github.com/cembreyfarquhar/User-Interface-Project-Week",
+    },
+    {
+      name: "Python Exercises",
+      webImageSrc: impython,
+      codeImageSrc: "",
+      topInfo:
+        'Here are some Python projects that I\'ve been working on recently. I\'ve become increasingly fascinated with machine learning while sharpening my Python skills at the same time.',
+      // url: "",
+      github: "https://github.com/cembreyfarquhar/impractical-python",
     },
   ]
 
