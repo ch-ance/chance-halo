@@ -1,0 +1,4 @@
+Project deminsions: {
+	width: 660px
+	height: 496px
+}
