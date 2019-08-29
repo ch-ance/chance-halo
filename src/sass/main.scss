@@ -1,187 +1,211 @@
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 a {
-    all: unset;
-    cursor: pointer;   
+  all: unset;
+  cursor: pointer;
 }
 
 .content {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-evenly;
+  align-items: center;
+  background-image: linear-gradient(to bottom, #55a3fa, #a8cffa);
+
+  h1 {
+    font-size: 3.6rem;
+    margin-bottom: 20%;
+    letter-spacing: 0.1rem;
+    text-align: center;
+  }
+
+  h2 {
+    margin-bottom: 20%;
+    font-size: 2.4rem;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+  }
+
+  .top-link-button {
+    border: 1px solid #55a3fa;
+    border-radius: 5%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    background: #bfddfd;
+    width: 60%;
+    height: 10%;
+    font-size: 2.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .project {
+    // width: 80%;
+    display: flex;
+    max-width: 80vw;
+    // height: 100%;
+    .content-viewer {
+      max-height: 50%;
+      display: flex;
+      button {
+        height: 200%;
+        border: 1px solid red;
+      }
+      .img-container {
+        display: flex;
+        flex-direction: column;
+        img {
+          color: red;
+          width: 100%;
+        }
+      }
+    }
+    .info-panel {
+      margin-left: 2%;
+      max-width: 50%;
+      h2 {
+        text-align: center;
+      }
+      p {
+        text-align: left;
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  nav {
+    width: 99%;
+    position: fixed;
+    height: 10%;
+    background: #55a3fa;
+    ul {
+      display: flex;
+      height: 100%;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 1rem;
+      li {
+        list-style: none;
+        font-size: 2rem;
+      }
+    }
+  }
+
+  .buttons {
     display: flex;
     width: 100%;
-    flex-direction: column;
-    height: 100vh;
     justify-content: space-evenly;
-    align-items: center;
-    background-image: linear-gradient(to bottom,#55A3FA,#A8CFFA);
+    margin-bottom: 10%;
+  }
 
-    h1 {
-        font-size: 3.6rem;
-        margin-bottom: 20%;
-        letter-spacing: .1rem;
-        text-align: center;
+  .contact-links {
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    align-items: flex-end;
+    height: 90%;
+
+    li {
+      display: flex;
+      flex-grow: 1;
+      justify-content: space-between;
+      margin-top: 4%;
+      font-size: 3.6rem;
+      width: 100%;
+      border-radius: 5px;
+      a {
+        color: black;
+        width: 100%;
+        padding: 0 5%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
     }
-
-    h2 {
-        margin-bottom: 20%;
-        font-size: 2.4rem;
+    li:nth-child(odd) {
+      background: #6596cc;
     }
-
-    h3 {
-        font-size: 1.8rem;
+    li:nth-child(even) {
+      background: #bfddfd;
     }
+  }
 
-    .top-link-button {
-        border: 1px solid #55a3fa;
-        border-radius: 5%;
-        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-        background: #BFDDFD;
-        width: 60%;
-        height: 10%;
-        font-size: 2.2rem;
+  .main {
+    margin: 2% 4%;
+
+    .topic {
+      h3 {
+        font-size: 1.6rem;
+        letter-spacing: 0.15rem;
         display: flex;
         justify-content: center;
-        align-items: center;
+      }
+      h4 {
+        display: flex;
+        justify-content: center;
+        font-size: 1.2rem;
+      }
+
+      p {
+        font-size: 1rem;
+        margin: 3%;
+        line-height: 1.2rem;
+        letter-spacing: 0.05rem;
+      }
     }
 
-    nav {
-        width: 99%;
-        position: fixed;
-        height: 10%;
-        background: #55A3FA;
-            ul {
-                display: flex;
-                height: 100%;
-                justify-content: space-between;
-                align-items: center;
-                padding: 0 1rem;
-                li {
-                    list-style: none;
-                    font-size: 2rem;
-                }
-            }
+    .skills {
+      min-height: 100vh;
+      padding-top: 10%;
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+
+        li {
+          font-size: 2.4rem;
+          margin: 2rem 0.5rem;
+          letter-spacing: 0.05rem;
+          background-color: #4a8fdb;
+          border-radius: 2px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
+            0 1px 2px rgba(0, 0, 0, 0.24);
+          transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+          width: 32%;
+          min-height: 110px;
+
+          &:hover {
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+              0 10px 10px rgba(0, 0, 0, 0.22);
+            cursor: pointer;
+            background-color: #95c6fc;
+          }
         }
-
-        .buttons {
-            display: flex;
-            width: 100%;
-            justify-content: space-evenly;
-            margin-bottom: 10%;
-
-        }
-
-        .contact-links {
-            display: flex;
-            width: 90%;
-            flex-direction: column;
-            align-items: flex-end;
-            height: 90%;
-
-            li {
-                display: flex;
-                flex-grow: 1;
-                justify-content: space-between;
-                margin-top: 4%;
-                font-size: 3.6rem;
-                width: 100%;
-                border-radius: 5px;
-                a {
-                    color: black;
-                    width: 100%;
-                    padding: 0 5%;
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                }
-            }
-            li:nth-child(odd) {
-                background: #6596CC
-            }
-            li:nth-child(even) {
-                background: #BFDDFD
-            }
-        }
-    
-
-    .main {
-        margin: 2% 4%;
-
-        .topic {
-            h3 {
-                font-size: 1.6rem;
-                letter-spacing: .15rem;
-                display: flex;
-                justify-content: center;
-            }
-            h4 {
-                display: flex;
-                justify-content: center;
-                font-size: 1.2rem;
-            }
-
-            p {
-                font-size: 1rem;
-                margin: 3%;
-                line-height: 1.2rem;
-                letter-spacing: .05rem;
-            }
-        }
-
-        .skills {
-            min-height: 100vh;
-            padding-top: 10%;
-            ul {
-                display: flex;
-                flex-wrap: wrap;
-
-                li {
-                    font-size: 2.4rem;
-                    margin: 2rem .5rem;
-                    letter-spacing: 0.05rem;
-                    background-color: #4A8FDB;
-                    border-radius: 2px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-                    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-                    width: 32%;
-                    min-height: 110px;
-                
-                    &:hover {
-                        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-                        cursor: pointer;
-                        background-color: #95C6FC;
-                    }
-                }
-            }
-        }
-
-        #experience {
-            min-height: 50vh;
-
-            p {
-                font-size: 1.8rem;
-                line-height: 2rem;
-                letter-spacing: .25rem;
-            }
-        }
+      }
     }
 
-    footer {
-        font-size: 1.4rem;
-        padding: 15px;
-        text-align: center;
+    #experience {
+      min-height: 50vh;
+
+      p {
+        font-size: 1.8rem;
+        line-height: 2rem;
+        letter-spacing: 0.25rem;
+      }
     }
+  }
+
+  footer {
+    font-size: 1.4rem;
+    padding: 15px;
+    text-align: center;
+  }
 }
-
-
-
-
-
-
-
-
-
-
