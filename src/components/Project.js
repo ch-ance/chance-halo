@@ -1,5 +1,4 @@
 import React from "react"
-import { EventEmitter } from "events";
 
 const Project = ({ project, setProjectIndex, projectIndex }) => {
   return (
@@ -29,12 +28,12 @@ const Project = ({ project, setProjectIndex, projectIndex }) => {
 
   function decrement(event) {
     event.preventDefault();
-    projectIndex >= 1 && setProjectIndex(projectIndex - 1) 
+    projectIndex >= 1 ? setProjectIndex(projectIndex - 1) : setProjectIndex(2)
   }
 
   function increment(event) {
     event.preventDefault();
-    projectIndex < 1 && setProjectIndex(projectIndex + 1)
+    projectIndex < 2 ? setProjectIndex(projectIndex + 1) : setProjectIndex(0)
   }
 }
 
