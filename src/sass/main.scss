@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 html {
   scroll-behavior: smooth;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: .2rem;
+  line-height: 1.6rem;
 }
 
 a {
@@ -46,10 +50,9 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    // @media only screen and (max-width: 700px) {
-    //   bottom: 0;
-    //   top: unset;
-    // }
+    @media only screen and (max-width: 700px) {
+      width: 90%;
+    }
   }
 
   .project {
@@ -64,10 +67,10 @@ a {
       display: flex;
 
       @media only screen and (max-width: 700px) {
-
       }
       button {
         height: 200%;
+        background-image: linear-gradient(to bottom right, #fa5a55, #fa55a3);
         border: 1px solid red;
         @media only screen and (max-width: 700px) {
           height: 100%;
