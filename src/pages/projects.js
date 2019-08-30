@@ -33,7 +33,7 @@ const Projects = () => {
       webImageSrc: snj,
       codeImageSrc: "",
       topInfo:
-        'SnJ Architects was used to show mastery of HTML5, CSS, and Javascript fundementals. \n\nLess preprocessing was used in conjuntion with semantic HTML and vanilla Javascript DOM manipulation. Also, if you type "bananas" while viewing the page, a bunch of dancing bananas pop up on the screen.',
+        'SnJ Architects was used to show mastery of HTML5, CSS, & JS fundementals. LESS preprocessing was used with semantic HTML & DOM manipulation. Also, typing "bananas" displays an easter egg :P',
       url: "https://www.snjarchitects.netlify.com",
       github: "https://github.com/cembreyfarquhar/User-Interface-Project-Week",
     },
