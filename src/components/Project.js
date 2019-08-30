@@ -6,7 +6,7 @@ const Project = ({ project, setProjectIndex, projectIndex }) => {
       <div className="content-viewer">
         <button id="left" onClick={decrement}>L</button>
         <div className="img-container">
-          <img src={project.webImageSrc} />
+          <img alt={project.alt} src={project.webImageSrc} />
           {/* <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--7hsckgOK--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/3gs9ef98gkagr342zm5c.png" /> */}
         </div>
         <button id="right" onClick={increment}>R</button>

@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from "react"
+import React from "react"
 import SEO from "../components/seo"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faMobileAlt, faEnvelope } from "@fortawesome/free-solid-svg-icons"
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
-import NavBar from "../components/NavBar"
 import TopLinkButton from "../components/TopLinkButton";
 const IndexPage = () => {
     return (

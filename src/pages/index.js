@@ -1,9 +1,13 @@
-import React, { useState, useEffect } from "react"
+import React, { useEffect } from "react"
 import projectsData from "../projectsData.json"
 import SEO from "../components/seo"
 import Header from "../components/Header"
 
 const IndexPage = () => {
+  useEffect(() => {
+    console.clear();
+    console.log("Hello! Thanks for checking out my portfolio.")
+  })
   return (
     <section className="content">
       <SEO

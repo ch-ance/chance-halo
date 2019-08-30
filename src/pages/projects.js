@@ -13,7 +13,7 @@ const Projects = () => {
     {
       name: "RxID",
       webImageSrc: rxidWeb,
-      codeImageSrc: "",
+      altText: "A GIF of a web application",
       topInfo:
         "RxID is a pill identifier and reminder application. This was a capstone project built in 5 weeks where I worked with a team of other web developers, data scientists, and a UX designer. \n\nTech stack includes React, Redux, PostgreSQL, and the entire project is hosted on AWS.",
       url: "https://www.rxid.net",
@@ -22,7 +22,7 @@ const Projects = () => {
     {
       name: "Chatty",
       webImageSrc: chattyWeb,
-      codeImageSrc: "",
+      altText: "A GIF of a web application",
       topInfo:
         "Chatty is a personal project that is intended to give users a secure and private instant messaging experience. Data is stored in web storage rather than an online database to protect private information. \n\nTech stack includes React, ContextAPI w/ Hooks, PostgreSQL, and WebSockets",
       url: "https://www.chattyapp.chat",
@@ -31,7 +31,7 @@ const Projects = () => {
     {
       name: "SnJ Architects",
       webImageSrc: snj,
-      codeImageSrc: "",
+      altText: "A GIF of a web application",
       topInfo:
         'SnJ Architects was used to show mastery of HTML5, CSS, & JS fundementals. LESS preprocessing was used with semantic HTML & DOM manipulation. Also, typing "bananas" displays an easter egg :P',
       url: "https://www.snjarchitects.netlify.com",
@@ -40,7 +40,7 @@ const Projects = () => {
     {
       name: "Python Exercises",
       webImageSrc: impython,
-      codeImageSrc: "",
+      altText: "A GIF of a web application",
       topInfo:
         'Here are some Python projects that I\'ve completed while working through the No Starch Press book, "Impractical Python".',
       // url: "",
