@@ -42,7 +42,7 @@ const Projects = () => {
       webImageSrc: impython,
       altText: "A GIF of a web application",
       topInfo:
-        'Here are some Python projects that I\'ve completed while working through the No Starch Press book, "Impractical Python".',
+        'Here are a few Python projects that I\'ve worked on. I enjoy making command line applications that serve a mathematical purpose or help prove something.',
       // url: "",
       github: "https://github.com/cembreyfarquhar/impractical-python",
     },
