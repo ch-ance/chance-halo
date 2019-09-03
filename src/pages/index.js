@@ -4,8 +4,10 @@ import Header from "../components/Header"
 
 const IndexPage = () => {
   useEffect(() => {
-    console.clear();
-    console.log("Hello! Thanks for checking out my portfolio.")
+    setTimeout(() => {
+      console.clear();
+      console.log("Hello! Thanks for checking out my portfolio.")
+    }, 2200)
   })
   return (
     <section className="content">

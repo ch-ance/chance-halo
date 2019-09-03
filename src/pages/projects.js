@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import TopLinkButton from "../components/TopLinkButton"
 import Project from "../components/Project"
 import rxidWeb from "../images/rxidweb.gif"
@@ -8,6 +8,13 @@ import impython from "../images/impython.gif"
 import nodebe from "../images/nodebe.gif"
 
 const Projects = () => {
+  useEffect(() => {
+    setTimeout(() => {
+      console.clear();
+      console.log("Hello! Thanks for checking out my portfolio.")
+    }, 2200)
+  })
+
   const [projectIndex, setProjectIndex] = useState(0)
 
   const projects = [
