@@ -40,7 +40,7 @@ const IndexPage = () => {
             target="_blank"
           >
             <h3>GitHub</h3>
-            <h4>cembreyfarquhar</h4>
+            <h4>https://github.com/cembreyfarquhar</h4>
             <FontAwesomeIcon icon={faGithub} />
           </a>
         </li>
@@ -51,7 +51,7 @@ const IndexPage = () => {
             target="_blank"
           >
             <h3>Linked-in</h3>
-            <h4>cembreyfarquhar</h4>
+            <h4>https://linkedin.com/in/cembreyfarquhar</h4>
             <FontAwesomeIcon icon={faLinkedin} />
           </a>
         </li>
