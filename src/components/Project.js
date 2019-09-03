@@ -18,8 +18,8 @@ const Project = ({ project, setProjectIndex, projectIndex }) => {
         </p>
         <p>
           <ul>
-            <li><a href={project.url}>{project.url}</a></li>
-            <li><a href={project.github}>{project.github}</a></li>
+            <li><a target="_blank" href={project.url}>{project.url}</a></li>
+            <li><a target="_blank" href={project.github}>{project.github}</a></li>
           </ul>
         </p>
       </div>
