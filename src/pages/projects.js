@@ -7,6 +7,7 @@ import chattyWeb from "../images/chattyweb.gif"
 import snj from "../images/snj.gif"
 import impython from "../images/impython.gif"
 import nodebe from "../images/nodebe.gif"
+import port from "../images/portfolio.gif"
 
 const Projects = () => {
   useEffect(() => {
@@ -44,6 +45,15 @@ const Projects = () => {
       topInfo:
         "This is a template to be used for creating Node APIs. The project is written in Typescript and contains everything needed to get started building an API including authentication, jsonwebtokens, custom middleware, and endpoints to access the built in routes.",
       github: "https://github.com/cembreyfarquhar/Node-Back-End-Starter",
+    },
+    {
+      name: "Chance Halo - My Portfolio",
+      webImageSrc: port,
+      altText: "A GIF of a web application",
+      topInfo:
+        "The site you're on right now! This is my personal portfolio which is designed to showcase some of my work and how to contact me, while maintaining a fairly minimalistic style. Oh, by the way, 'Halo' is my middle name - hence 'Chance Halo'. =)",
+      url: "https://www.chancehalo.me",
+      github: "https://github.com/cembreyfarquhar/chance-halo",
     },
     {
       name: "SnJ Architects",
