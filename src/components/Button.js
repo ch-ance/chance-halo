@@ -9,7 +9,8 @@ const style = {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    fontWeight: "bold"
+    fontWeight: "bold",
+    fontSize: ".8rem"
 }
 
 const Button = (

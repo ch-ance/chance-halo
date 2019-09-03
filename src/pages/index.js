@@ -1,5 +1,4 @@
 import React, { useEffect } from "react"
-import projectsData from "../projectsData.json"
 import SEO from "../components/seo"
 import Header from "../components/Header"
 

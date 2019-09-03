@@ -5,6 +5,7 @@ import rxidWeb from "../images/rxidweb.gif"
 import chattyWeb from "../images/chattyweb.gif"
 import snj from "../images/snj.gif"
 import impython from "../images/impython.gif"
+import nodebe from "../images/nodebe.gif"
 
 const Projects = () => {
   const [projectIndex, setProjectIndex] = useState(0)
@@ -29,6 +30,14 @@ const Projects = () => {
       github: "https://github.com/cembreyfarquhar/chatty",
     },
     {
+      name: "Node Back End Starter",
+      webImageSrc: nodebe,
+      altText: "A GIF of a web application",
+      topInfo:
+        "This is a template to be used for creating Node APIs. The project is written in Typescript and contains everything needed to get started building an API including authentication, jsonwebtokens, custom middleware, and endpoints to access the built in routes.",
+      github: "https://github.com/cembreyfarquhar/Node-Back-End-Starter",
+    },
+    {
       name: "SnJ Architects",
       webImageSrc: snj,
       altText: "A GIF of a web application",
@@ -42,7 +51,7 @@ const Projects = () => {
       webImageSrc: impython,
       altText: "A GIF of a web application",
       topInfo:
-        'Here are a few Python projects that I\'ve worked on. I enjoy making command line applications that serve a mathematical purpose or help prove something.',
+        "Here are a few Python projects that I've worked on. I enjoy making command line applications that serve a mathematical purpose or help prove something.",
       // url: "",
       github: "https://github.com/cembreyfarquhar/impractical-python",
     },
