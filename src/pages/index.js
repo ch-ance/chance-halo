@@ -1,11 +1,12 @@
 import React, { useEffect } from "react"
 import SEO from "../components/seo"
 import Header from "../components/Header"
+import { Helmet } from "react-helmet"
 
 const IndexPage = () => {
   useEffect(() => {
     setTimeout(() => {
-      console.clear();
+      console.clear()
       console.log("Hello! Thanks for checking out my portfolio.")
     }, 2200)
   })
