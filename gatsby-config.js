@@ -1,13 +1,12 @@
 module.exports = {
   siteMetadata: {
     title: `Web Developer`,
-    description: 'mv negativity.c positivity.py',
+    description: 'rm negativity.bad make positivity.good',
     author: `@ChanceHalo`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
     "gatsby-plugin-sass",
-    "gatsby-plugin-robots-txt",
     {
       resolve: `gatsby-source-filesystem`,
       options: {
