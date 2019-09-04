@@ -29,7 +29,7 @@ const IndexPage = () => {
         <li>
           <a href="mailto:cembreyfarquhar@gmail.com">
             <h3>E-mail</h3>
-            <h4>cembreyfarquhar@gmail.com</h4>
+            <h4>cembreyfarquhar<br/>@gmail.com</h4>
             <FontAwesomeIcon icon={faEnvelope} />
           </a>
         </li>
@@ -40,7 +40,7 @@ const IndexPage = () => {
             target="_blank"
           >
             <h3>GitHub</h3>
-            <h4>https://github.com/cembreyfarquhar</h4>
+            <h4>https://<br/>github.com/<br/>cembreyfarquhar</h4>
             <FontAwesomeIcon icon={faGithub} />
           </a>
         </li>
@@ -51,7 +51,7 @@ const IndexPage = () => {
             target="_blank"
           >
             <h3>Linked-in</h3>
-            <h4>https://linkedin.com/in/cembreyfarquhar</h4>
+            <h4>linkedin.com/<br/>in/<br/>cembreyfarquhar</h4>
             <FontAwesomeIcon icon={faLinkedin} />
           </a>
         </li>
