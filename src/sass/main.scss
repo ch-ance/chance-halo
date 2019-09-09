@@ -6,6 +6,10 @@ html {
   line-height: 1.6rem;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 a {
   all: unset;
   cursor: pointer;
@@ -40,22 +44,29 @@ a {
     font-size: 1.8rem;
   }
 
-  .top-link-button {
+  .top-link-buttons {
     border: 1px solid #55a3fa;
     border-radius: 5px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     background-image: linear-gradient(to bottom right, #fa5a55, #fa55a3);
-    width: 60%;
+    width: 100%;
+    padding: 1.5% 0;
     position: absolute;
     top: 0;
     height: 10%;
     max-height: 35px;
     font-size: 2.2rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     @media only screen and (max-width: 700px) {
-      width: 90%;
+      // awidth: 90%;
+    }
+
+    .top-link-button {
+      background: #a8cffa;
+      padding: .5%;
+      box-shadow: 10% 10px #fa5a55;
     }
   }
 
@@ -77,8 +88,9 @@ a {
       button {
         height: 15%;
         outline: none;
-        background-image: linear-gradient(to bottom right, #fa5a55, #fa55a3);
-        border: 1px solid red;
+        background: none;
+        border: none;
+        // background-image: linear-gradient(to bottom right, #fa5a55, #fa55a3);
         @media only screen and (max-width: 700px) {
           height: 100%;
         }
