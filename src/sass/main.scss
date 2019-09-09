@@ -90,10 +90,11 @@ a {
       @media only screen and (max-width: 700px) {
       }
       button {
-        height: 15%;
+        height: 25%;
         outline: none;
         background: none;
         border: none;
+        font-size: 35px;
         // background-image: linear-gradient(to bottom right, #fa5a55, #fa55a3);
         @media only screen and (max-width: 700px) {
           height: 100%;
