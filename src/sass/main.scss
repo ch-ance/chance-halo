@@ -61,7 +61,8 @@ a {
     border: 1px solid #55a3fa;
     border-radius: 5px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    background-image: linear-gradient(to bottom right, #fa5a55, #fa55a3);
+    // background-image: linear-gradient(to bottom, gray, darkslategray);
+    background: rgba(255, 255, 255, 0.35);
     width: 100%;
     padding: 2.3% 0;
     position: absolute;
@@ -82,7 +83,8 @@ a {
       display: inline-block;
       padding: 0.5% 1.25%;
       background-color: #55a3fa;
-      background-image: linear-gradient(#a8cffa, #55a3fa 65%);
+      // background-image: linear-gradient(#a8cffa, #55a3fa 65%);
+      background-image: linear-gradient(to bottom right, #fa5a55, #fa55a3);
       border-radius: 3px;
       box-shadow: 0px 4px 6px -2px black;
 
@@ -172,7 +174,6 @@ a {
       margin-left: 2%;
       padding: 0 5%;
       max-width: 50%;
-      border: 1px solid black;
       flex-wrap: wrap;
       background: rgba(255, 255, 255, 0.35);
       border-radius: 5px;
@@ -250,13 +251,14 @@ a {
       }
     }
     li {
-      border: 5px solid #fa5a55;
       display: flex;
       justify-content: space-between;
       margin-top: 4%;
       font-size: 3.6rem;
-      // background: #6596cc;
-      background-image: linear-gradient(#a8cffa, #55a3fa 65%);
+      background: rgba(255, 255, 255, 0.35);
+      border-radius: 5px;
+      text-align: center;
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25);
       flex-wrap: wrap;
       text-align: center;
       width: 45%;
