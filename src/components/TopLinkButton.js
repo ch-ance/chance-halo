@@ -7,9 +7,9 @@ const TopLinkButton = () => {
       <Link to={"/projects"} className="top-link-button">
         View Projects
       </Link>
-      <Link to={"/"} className="top-link-button">
+      {/* <Link to={"/"} className="top-link-button">
         Home
-      </Link>
+      </Link> */}
       <Link to={"/contact"} className="top-link-button">
         Contact Me
       </Link>
