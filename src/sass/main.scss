@@ -28,13 +28,13 @@ a {
     width: 30%;
     min-height: 50px;
     border-radius: 5px;
-    background-image: linear-gradient(to bottom right, #FA5A55, #FA55A3);
+    background-image: linear-gradient(to bottom right, #fa5a55, #fa55a3);
     display: flex;
     box-shadow: 0px 4px 6px -2px black;
     justify-content: center;
     align-items: center;
     font-weight: bold;
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 
   h1 {
@@ -80,12 +80,12 @@ a {
     .top-link-button {
       position: relative;
       display: inline-block;
-      padding: .5% 1.25%;
+      padding: 0.5% 1.25%;
       background-color: #55a3fa;
       background-image: linear-gradient(#a8cffa, #55a3fa 65%);
       border-radius: 3px;
       box-shadow: 0px 4px 6px -2px black;
-    
+
       text-decoration: none;
       color: white;
       font-size: 1.2rem;
@@ -96,17 +96,20 @@ a {
       }
 
       &:after {
-        content: '';
+        content: "";
         position: absolute;
         top: 2px;
         left: 2px;
         width: calc(100% - 4px);
         height: 50%;
-        background: linear-gradient(rgba(255,255,255,0.45), rgba(255,255,255,0.1));
+        background: linear-gradient(
+          rgba(255, 255, 255, 0.45),
+          rgba(255, 255, 255, 0.1)
+        );
       }
 
       &:active {
-        padding: .5% 1%;
+        padding: 0.5% 1%;
         text-shadow: -1px -1px 2px darkslategray;
         box-shadow: 0px 2px 6px -2px black;
       }
@@ -115,6 +118,9 @@ a {
 
   .project {
     display: flex;
+    min-height: 60vh;
+    height: 100%;
+    max-height: 100vh;
     // max-width: 95vw;
     padding: 0 2.5%;
     @media only screen and (max-width: 700px) {
@@ -164,18 +170,21 @@ a {
     }
     .info-panel {
       margin-left: 2%;
-      padding: 0 .25%;
+      padding: 0 5%;
       max-width: 50%;
       border: 1px solid black;
       flex-wrap: wrap;
-      background: white;
-       text-align: center;
-       box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-       @media only screen and (max-width: 700px) {
+      background: rgba(255, 255, 255, 0.35);
+      border-radius: 5px;
+      text-align: center;
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+        0 10px 10px rgba(0, 0, 0, 0.22);
+      @media only screen and (max-width: 700px) {
         max-width: 100%;
       }
       h2 {
-        text-align: center;
+        text-shadow: 1.2px 1.2px 1px gray;
+        letter-spacing: 0.15rem;
         margin: 5%;
         @media only screen and (max-width: 700px) {
           margin: 10% 0;
@@ -184,7 +193,7 @@ a {
       p {
         text-align: center;
         font-size: 1.2rem;
-        letter-spacing: .05rem;
+        letter-spacing: 0.05rem;
         @media only screen and (max-width: 700px) {
           margin: 0;
           word-wrap: break-word;
@@ -233,11 +242,11 @@ a {
       font-size: 1.4rem;
     }
     h4 {
-      font-size: .8rem;
-      letter-spacing: .1rem;
+      font-size: 0.8rem;
+      letter-spacing: 0.1rem;
 
       @media only screen and (max-width: 700px) {
-        font-size: .7rem;
+        font-size: 0.7rem;
       }
     }
     li {
