@@ -16,7 +16,8 @@ const style = {
 const Button = (
     { to }
 ) => (
-    <Link to={to} style={style}>{to.toUpperCase()}</Link>
-)
+    // <Link to={to} style={style}>{to.toUpperCase()}</Link>
+    <Link to={to} style={style}>Let's Go >></Link>
+    )
 
 export default Button;
