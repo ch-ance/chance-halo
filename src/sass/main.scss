@@ -24,6 +24,19 @@ a {
   align-items: center;
   background-image: linear-gradient(to bottom, #55a3fa, #a8cffa);
 
+  .landing-button {
+    width: 30%;
+    min-height: 50px;
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom right, #FA5A55, #FA55A3);
+    display: flex;
+    box-shadow: 0px 4px 6px -2px black;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: .8rem;
+  }
+
   h1 {
     font-size: 2.4rem;
     margin-bottom: 20%;
@@ -76,8 +89,6 @@ a {
       text-decoration: none;
       color: white;
       font-size: 1.2rem;
-      font-family: sans-serif;
-      font-weight: 500;
       letter-spacing: 0.05rem;
       text-shadow: 1px 1px 2px darkslategray;
       @media only screen and (max-width: 700px) {
@@ -91,7 +102,7 @@ a {
         left: 2px;
         width: calc(100% - 4px);
         height: 50%;
-        background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.2));
+        background: linear-gradient(rgba(255,255,255,0.45), rgba(255,255,255,0.1));
       }
 
       &:active {
