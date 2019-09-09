@@ -44,6 +44,7 @@ const Projects = () => {
       altText: "A GIF of a web application",
       topInfo:
         "This is a template to be used for creating Node APIs. The project is written in Typescript and contains everything needed to get started building an API including authentication, jsonwebtokens, custom middleware, and endpoints to access the built in routes.",
+      url: 'none',
       github: "https://github.com/cembreyfarquhar/Node-Back-End-Starter",
     },
     {
@@ -70,7 +71,7 @@ const Projects = () => {
       altText: "A GIF of a web application",
       topInfo:
         "Here are a few Python projects that I've worked on. I enjoy making command line applications that serve a mathematical purpose or help prove something.",
-      // url: "",
+      url: "none",
       github: "https://github.com/cembreyfarquhar/impractical-python",
     },
   ]

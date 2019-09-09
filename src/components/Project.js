@@ -18,7 +18,7 @@ const Project = ({ project, setProjectIndex, projectIndex }) => {
         </p>
         <p>
           <ul>
-            <li><a target="_blank" href={project.url}>{project.url}</a></li>
+            <li className={project.url === "none" ? "noUrl" : null}><a target="_blank" href={project.url}>{project.url}</a></li>
             <li><a target="_blank" href={project.github}>{project.github}</a></li>
           </ul>
         </p>
