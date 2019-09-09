@@ -55,7 +55,7 @@ a {
     top: 0;
     height: 10%;
     max-height: 35px;
-    font-size: 2.2rem;
+    // font-size: 2.2rem;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -74,7 +74,7 @@ a {
       box-shadow: 0px 4px 6px -2px black;
     
       text-decoration: none;
-      color: #fff;
+      color: white;
       font-size: 1.2rem;
       font-family: sans-serif;
       font-weight: 500;
@@ -223,6 +223,11 @@ a {
     }
     h4 {
       font-size: .8rem;
+      letter-spacing: .1rem;
+
+      @media only screen and (max-width: 700px) {
+        font-size: .7rem;
+      }
     }
     li {
       border: 5px solid #fa5a55;
@@ -230,7 +235,9 @@ a {
       justify-content: space-between;
       margin-top: 4%;
       font-size: 3.6rem;
-      background: #6596cc;
+      // background: #6596cc;
+      background-image: linear-gradient(#a8cffa, #55a3fa 65%);
+      flex-wrap: wrap;
       text-align: center;
       width: 45%;
       border-radius: 5px;
