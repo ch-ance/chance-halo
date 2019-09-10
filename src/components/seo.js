@@ -7,7 +7,7 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import Helmet from "react-helmet"
+import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
 function SEO({ description, lang, meta, title }) {
@@ -18,7 +18,7 @@ function SEO({ description, lang, meta, title }) {
           siteMetadata {
             title
             description
-            author,
+            author
             image
           }
         }
@@ -29,51 +29,70 @@ function SEO({ description, lang, meta, title }) {
   const metaDescription = description || site.siteMetadata.description
 
   return (
-    <Helmet
-      htmlAttributes={{
-        lang,
-      }}
-      title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
-      meta={[
-        {
-          name: `description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:title`,
-          content: title,
-        },
-        {
-          property: `og:description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:type`,
-          content: `website`,
-        },
-        {
-          name: `twitter:card`,
-          content: `summary`,
-        },
-        {
-          name: `twitter:creator`,
-          content: site.siteMetadata.author,
-        },
-        {
-          name: `twitter:title`,
-          content: title,
-        },
-        {
-          name: `twitter:description`,
-          content: metaDescription,
-        },
-        {
-          name: 'og:image',
-          content: site.siteMetadata.image
-        }
-      ].concat(meta)}
-    />
+    <Helmet title={title} >
+
+    <meta name="description" content={SEO.description} />
+    <meta name="image" content={"https://photos.google.com/photo/AF1QipMjek-GQQfY2QP6ifrQ_wsk_SGHcdW0th8ftOJg"} />
+    <meta name="og:image" content={"https://photos.google.com/photo/AF1QipMjek-GQQfY2QP6ifrQ_wsk_SGHcdW0th8ftOJg"} />
+    <meta name="og:title" content={SEO.title} />
+    <meta name="og:description" content={SEO.description} />
+    <meta name="og:type" content={"website"} />
+    {/* <meta name="" content={SEO.description} /> */}
+    <meta name="twitter:description" content={metaDescription} />
+    <meta name="twitter:title" content={title} />
+
+    </Helmet>
+    // <Helmet
+    //   htmlAttributes={{
+    //     lang,
+    //   }}
+    //   title={title}
+    //   titleTemplate={`%s | ${site.siteMetadata.title}`}
+    //   meta={[
+    //     {
+    //       name: `description`,
+    //       content: metaDescription,
+    //     },
+    //     {
+    //       property: `og:title`,
+    //       content: title,
+    //     },
+    //     {
+    //       property: `og:description`,
+    //       content: metaDescription,
+    //     },
+    //     {
+    //       property: `og:type`,
+    //       content: `website`,
+    //     },
+    //     {
+    //       name: `twitter:card`,
+    //       content: `summary`,
+    //     },
+    //     {
+    //       name: `twitter:creator`,
+    //       content: site.siteMetadata.author,
+    //     },
+    //     {
+    //       name: `twitter:title`,
+    //       content: title,
+    //     },
+    //     {
+    //       name: `twitter:description`,
+    //       content: metaDescription,
+    //     },
+    //     {
+    //       name: "og:image",
+    //       content:
+    //         "https://photos.google.com/photo/AF1QipMjek-GQQfY2QP6ifrQ_wsk_SGHcdW0th8ftOJg",
+    //     },
+    //     {
+    //       name: "image",
+    //       content:
+    //         "https://photos.google.com/photo/AF1QipMjek-GQQfY2QP6ifrQ_wsk_SGHcdW0th8ftOJg",
+    //     },
+    //   ].concat(meta)}
+    // />
   )
 }
 

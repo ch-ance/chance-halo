@@ -7,7 +7,6 @@ const Project = ({ project, setProjectIndex, projectIndex }) => {
         <button id="left" style={{fontWeight: "bold"}} onClick={decrement}>{"<"}</button>
         <div className="img-container">
           <img alt={project.altText} src={project.webImageSrc} />
-          {/* <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--7hsckgOK--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/3gs9ef98gkagr342zm5c.png" /> */}
         </div>
         <button id="right" style={{fontWeight: "bold"}} onClick={increment}>{">"}</button>
       </div>
@@ -18,8 +17,8 @@ const Project = ({ project, setProjectIndex, projectIndex }) => {
         </p>
         <p>
           <ul>
-            <li className={project.url === "none" ? "noUrl" : null}><a target="_blank" href={project.url}>{project.url}</a></li>
-            <li><a target="_blank" href={project.github}>{project.github}</a></li>
+            <li className={project.url === "none" ? "noUrl" : null}><a target="_blank" rel="noopener noreferrer" href={project.url}>{project.url}</a></li>
+            <li><a target="_blank" rel="noopener noreferrer" href={project.github}>{project.github}</a></li>
           </ul>
         </p>
       </div>
