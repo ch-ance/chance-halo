@@ -234,7 +234,8 @@ a {
         color: blue;
         text-decoration: underline;
         margin: 6% 0;
-        letter-spacing: 0.06rem;
+        word-wrap: break-word;
+        letter-spacing: 0.00rem;
         list-style: none;
         text-align: center;
       }
@@ -320,43 +321,5 @@ a {
         letter-spacing: 0.05rem;
       }
     }
-
-    .skills {
-      min-height: 100vh;
-      padding-top: 10%;
-      ul {
-        display: flex;
-        flex-wrap: wrap;
-
-        li {
-          font-size: 2.4rem;
-          margin: 2rem 0.5rem;
-          letter-spacing: 0.05rem;
-          background-color: #4a8fdb;
-          border-radius: 2px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
-            0 1px 2px rgba(0, 0, 0, 0.24);
-          transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-          width: 32%;
-          min-height: 110px;
-
-          &:hover {
-            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
-              0 10px 10px rgba(0, 0, 0, 0.22);
-            cursor: pointer;
-            background-color: #95c6fc;
-          }
-        }
-      }
-    }
-  }
-
-  footer {
-    font-size: 1.4rem;
-    padding: 15px;
-    text-align: center;
   }
 }
