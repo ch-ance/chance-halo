@@ -20,7 +20,8 @@ a {
   width: 100%;
   flex-direction: column;
   min-height: 100vh;
-  justify-content: space-evenly;
+  // justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   background-image: linear-gradient(to bottom, #55a3fa, #a8cffa);
 
@@ -35,6 +36,10 @@ a {
     align-items: center;
     font-weight: bold;
     font-size: 0.8rem * 1.25;
+
+    @media only screen and (max-width: 700px) {
+      width: 50%;
+    }
   }
 
   h1 {
@@ -43,6 +48,9 @@ a {
     letter-spacing: 0.1rem;
     line-height: normal;
     text-align: center;
+    @media only screen and (max-width: 700px) {
+      font-size: 2.4rem;
+    }
   }
 
   h2 {
@@ -51,6 +59,9 @@ a {
     line-height: normal;
     letter-spacing: normal;
     text-align: center;
+    @media only screen and (max-width: 700px) {
+      font-size: 2rem;
+    }
   }
 
   h3 {
@@ -127,7 +138,7 @@ a {
     padding: 0 2.5%;
     @media only screen and (max-width: 700px) {
       flex-direction: column;
-      margin-top: 20%;
+      padding: 0;
     }
     .content-viewer {
       display: flex;
@@ -135,6 +146,8 @@ a {
 
       justify-content: space-between;
       @media only screen and (max-width: 700px) {
+        // border: 5px solid yellow;
+        // height: 25vh;
       }
       button {
         height: 25%;
