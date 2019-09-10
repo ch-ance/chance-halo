@@ -19,7 +19,8 @@ function SEO({ description, lang, meta, title }) {
             title
             description
             author,
-            defaultImage
+            defaultImage,
+            image
           }
         }
       }
