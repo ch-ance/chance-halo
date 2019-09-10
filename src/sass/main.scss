@@ -26,7 +26,7 @@ a {
 
   .landing-button {
     width: 30%;
-    min-height: 50px;
+    min-height: 50px * 1.25;
     border-radius: 5px;
     background-image: linear-gradient(to bottom right, #fa5a55, #fa55a3);
     display: flex;
@@ -34,11 +34,11 @@ a {
     justify-content: center;
     align-items: center;
     font-weight: bold;
-    font-size: 0.8rem;
+    font-size: 0.8rem * 1.25;
   }
 
   h1 {
-    font-size: 2.4rem;
+    font-size: 2.4rem * 1.25;
     margin-bottom: 20%;
     letter-spacing: 0.1rem;
     line-height: normal;
@@ -47,7 +47,7 @@ a {
 
   h2 {
     margin-bottom: 20%;
-    font-size: 2rem;
+    font-size: 2rem * 1.25;
     line-height: normal;
     letter-spacing: normal;
     text-align: center;
@@ -64,11 +64,11 @@ a {
     // background-image: linear-gradient(to bottom, gray, darkslategray);
     background: rgba(255, 255, 255, 0.35);
     width: 100%;
-    padding: 2.3% 0;
+    padding: 2.6% 0;
     position: absolute;
     top: 0;
     height: 10%;
-    max-height: 35px;
+    max-height: 35px * 1.25;
     // font-size: 2.2rem;
     display: flex;
     justify-content: space-evenly;
@@ -81,7 +81,7 @@ a {
     .top-link-button {
       position: relative;
       display: inline-block;
-      padding: 0.5% 1.25%;
+      padding: 0.8% 1.5%;
       background-color: #55a3fa;
       // background-image: linear-gradient(#a8cffa, #55a3fa 65%);
       background-image: linear-gradient(to bottom right, #fa5a55, #fa55a3);
@@ -111,7 +111,7 @@ a {
       }
 
       &:active {
-        padding: 0.5% 1%;
+        padding: 0.7% 1.4%;
         text-shadow: -1px -1px 2px darkslategray;
         box-shadow: 0px 2px 6px -2px black;
       }
@@ -123,17 +123,17 @@ a {
     min-height: 60vh;
     height: 100%;
     max-height: 100vh;
-    // max-width: 95vw;
+    max-width: 95vw;
     padding: 0 2.5%;
     @media only screen and (max-width: 700px) {
       flex-direction: column;
       margin-top: 20%;
     }
     .content-viewer {
-      // max-height: 50%;
       display: flex;
       align-items: center;
 
+      justify-content: space-between;
       @media only screen and (max-width: 700px) {
       }
       button {
@@ -163,7 +163,8 @@ a {
         // flex-direction: column;
         img {
           color: red;
-          width: 100%;
+          width: 50vw;
+          max-width: 100%;
           @media only screen and (max-width: 700px) {
             height: 100%;
           }
