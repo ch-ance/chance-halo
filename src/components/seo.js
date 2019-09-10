@@ -18,7 +18,8 @@ function SEO({ description, lang, meta, title }) {
           siteMetadata {
             title
             description
-            author
+            author,
+            defaultImage
           }
         }
       }
@@ -67,6 +68,14 @@ function SEO({ description, lang, meta, title }) {
           name: `twitter:description`,
           content: metaDescription,
         },
+        {
+          name: 'defaultImage',
+          content: site.siteMetadata.image
+        },
+        {
+          name: 'image',
+          content: site.siteMetadata.image
+        }
       ].concat(meta)}
     />
   )

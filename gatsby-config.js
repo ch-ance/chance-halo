@@ -1,8 +1,11 @@
 module.exports = {
   siteMetadata: {
     title: `Web Developer`,
-    description: 'rm negativity.bad make positivity.good',
-    author: `@ChanceHalo`,
+    description: 'rm -rf bad_things.* && touch good_things.js',
+    author: `Chance Embrey-Farquhar`,
+    image: 'src/images/gatsby-icon.png',
+    url: 'https://chancehalo.me',
+    twitterUsername: '@ChanceHalo'
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
