@@ -31,15 +31,15 @@ function SEO({ description, lang, meta, title }) {
   return (
     <Helmet title={title} >
 
-    <meta name="description" content={SEO.description} />
-    <meta name="image" content={"https://photos.google.com/photo/AF1QipMjek-GQQfY2QP6ifrQ_wsk_SGHcdW0th8ftOJg"} />
-    <meta name="og:image" content={"https://photos.google.com/photo/AF1QipMjek-GQQfY2QP6ifrQ_wsk_SGHcdW0th8ftOJg"} />
-    <meta name="og:title" content={SEO.title} />
-    <meta name="og:description" content={SEO.description} />
-    <meta name="og:type" content={"website"} />
-    {/* <meta name="" content={SEO.description} /> */}
-    <meta name="twitter:description" content={metaDescription} />
-    <meta name="twitter:title" content={title} />
+    <meta property="description" content={SEO.description} />
+    <meta property="image" content={"https://photos.google.com/photo/AF1QipMjek-GQQfY2QP6ifrQ_wsk_SGHcdW0th8ftOJg"} />
+    <meta property="og:image" content={"https://photos.google.com/photo/AF1QipMjek-GQQfY2QP6ifrQ_wsk_SGHcdW0th8ftOJg"} />
+    <meta property="og:title" content={SEO.title} />
+    <meta property="og:description" content={SEO.description} />
+    <meta property="og:type" content={"website"} />
+    {/* <meta property="" content={SEO.description} /> */}
+    <meta property="twitter:description" content={metaDescription} />
+    <meta property="twitter:title" content={title} />
 
     </Helmet>
     // <Helmet
