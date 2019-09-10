@@ -25,6 +25,10 @@ a {
   align-items: center;
   background-image: linear-gradient(to bottom, #55a3fa, #a8cffa);
 
+  @media only screen and (max-width: 1200px) {
+    padding-top: 2rem;      
+  }
+
   .landing-button {
     width: 30%;
     min-height: 50px * 1.25;
