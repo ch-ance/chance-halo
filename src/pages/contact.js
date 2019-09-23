@@ -1,7 +1,7 @@
 import React, { useEffect } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faMobileAlt, faEnvelope } from "@fortawesome/free-solid-svg-icons"
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
+import { faGithub, faLinkedin, faTwitter } from "@fortawesome/free-brands-svg-icons"
 const ContactPage = () => {
   useEffect(() => {
     setTimeout(() => {
@@ -14,7 +14,7 @@ const ContactPage = () => {
       <ul className="contact-links">
         <li>
           <a href="tel:+18163856369">
-            <h3>Call or Text </h3>
+            <h3>Phone</h3>
             <h4>(816)-385-6369</h4>
             <FontAwesomeIcon icon={faMobileAlt} />
           </a>
@@ -30,6 +30,14 @@ const ContactPage = () => {
             <FontAwesomeIcon icon={faEnvelope} />
           </a>
         </li>
+        <li>
+          <a href="https://twitter.com/ChanceHalo" target="_blank">
+            <h3>Twitter</h3>
+            <h4>@ChanceHalo</h4>
+            <FontAwesomeIcon icon={faTwitter} />
+          </a>
+        </li>
+
         <li>
           <a
             href="https://www.github.com/cembreyfarquhar"
