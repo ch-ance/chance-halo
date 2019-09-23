@@ -17,20 +17,20 @@ a {
 
 .container {
   background-image: linear-gradient(to bottom, #55a3fa, #a8cffa);
-
 }
 
 .content {
   display: flex;
   width: 100%;
   flex-direction: column;
+  // min-height: 100vh;
   min-height: 100vh;
   // justify-content: space-evenly;
   justify-content: space-evenly;
   align-items: center;
 
   @media only screen and (max-width: 1200px) {
-    padding-top: 2rem;      
+    padding-top: 2rem;
   }
 
   .landing-button {
@@ -48,11 +48,28 @@ a {
     @media only screen and (max-width: 700px) {
       width: 50%;
     }
+
+    // &:active {
+    //   padding: 0.7% 1.4%;
+    //   text-shadow: -1px -1px 2px darkslategray;
+    //   box-shadow: 0px 2px 6px -2px black;
+    // }
+
+    // &:after {
+    //   position: absolute;
+    //   top: 2px;
+    //   left: 2px;
+    //   width: calc(100% - 4px);
+    //   height: 50%;
+    //   background: linear-gradient(
+    //     rgba(255, 255, 255, 0.45),
+    //     rgba(255, 255, 255, 0.1)
+    //   );
+    // }
   }
 
   h1 {
     font-size: 2.4rem * 1.25;
-    margin-bottom: 20%;
     letter-spacing: 0.1rem;
     line-height: normal;
     text-align: center;
@@ -62,7 +79,6 @@ a {
   }
 
   h2 {
-    margin-bottom: 20%;
     font-size: 2rem * 1.25;
     line-height: normal;
     letter-spacing: normal;
@@ -117,7 +133,6 @@ a {
       }
 
       &:after {
-        content: "";
         position: absolute;
         top: 2px;
         left: 2px;
@@ -244,7 +259,7 @@ a {
         text-decoration: underline;
         margin: 6% 0;
         word-wrap: break-word;
-        letter-spacing: 0.00rem;
+        letter-spacing: 0rem;
         list-style: none;
         text-align: center;
       }

@@ -7,9 +7,7 @@ const Header = () => {
       {/* <NavBar /> */}
       <h1>Chance Embrey-Farquhar</h1>
       <h2>Software Engineer, Full-Stack Web Developer</h2>
-      <div className="buttons">
-        <Button to="#projects" />
-      </div>
+      <Button to="#projects" />
     </header>
   )
 }
