@@ -1,10 +1,8 @@
 import React, { useEffect } from "react"
-import SEO from "../components/seo"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faMobileAlt, faEnvelope } from "@fortawesome/free-solid-svg-icons"
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
-import TopLinkButton from "../components/TopLinkButton"
-const IndexPage = () => {
+const ContactPage = () => {
   useEffect(() => {
     setTimeout(() => {
       console.clear()
@@ -12,12 +10,7 @@ const IndexPage = () => {
     }, 2200)
   })
   return (
-    <section className="content">
-      <TopLinkButton />
-      <SEO
-        title="Chance Halo"
-        description="Personal site for Chance Embrey-Farquhar"
-      />
+    <section className="contact content">
       <ul className="contact-links">
         <li>
           <a href="tel:+18163856369">
@@ -29,7 +22,11 @@ const IndexPage = () => {
         <li>
           <a href="mailto:cembreyfarquhar@gmail.com">
             <h3>E-mail</h3>
-            <h4>cembreyfarquhar<br/>@gmail.com</h4>
+            <h4>
+              cembreyfarquhar
+              <br />
+              @gmail.com
+            </h4>
             <FontAwesomeIcon icon={faEnvelope} />
           </a>
         </li>
@@ -40,7 +37,13 @@ const IndexPage = () => {
             target="_blank"
           >
             <h3>GitHub</h3>
-            <h4>https://<br/>github.com/<br/>cembreyfarquhar</h4>
+            <h4>
+              https://
+              <br />
+              github.com/
+              <br />
+              cembreyfarquhar
+            </h4>
             <FontAwesomeIcon icon={faGithub} />
           </a>
         </li>
@@ -51,7 +54,13 @@ const IndexPage = () => {
             target="_blank"
           >
             <h3>Linked-in</h3>
-            <h4>linkedin.com/<br/>in/<br/>cembreyfarquhar</h4>
+            <h4>
+              linkedin.com/
+              <br />
+              in/
+              <br />
+              cembreyfarquhar
+            </h4>
             <FontAwesomeIcon icon={faLinkedin} />
           </a>
         </li>
@@ -60,4 +69,4 @@ const IndexPage = () => {
   )
 }
 
-export default IndexPage
+export default ContactPage

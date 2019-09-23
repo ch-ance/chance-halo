@@ -44,7 +44,7 @@ const Projects = () => {
       altText: "A GIF of a web application",
       topInfo:
         "This is a template to be used for creating Node APIs. The project is written in Typescript and contains everything needed to get started building an API including authentication, jsonwebtokens, custom middleware, and endpoints to access the built in routes.",
-      url: 'none',
+      url: "none",
       github: "https://github.com/cembreyfarquhar/Node-Back-End-Starter",
     },
     {
@@ -77,18 +77,13 @@ const Projects = () => {
   ]
 
   return (
-    <div className="content">
-      <SEO
-        title="Chance Halo"
-        description="Personal site for Chance Embrey-Farquhar"
-      />
-      <TopLinkButton />
+    <section id="projects" className="content">
       <Project
         project={projects[projectIndex]}
         setProjectIndex={setProjectIndex}
         projectIndex={projectIndex}
       />
-    </div>
+    </section>
   )
 }
 

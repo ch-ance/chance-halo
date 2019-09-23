@@ -15,6 +15,11 @@ a {
   cursor: pointer;
 }
 
+.container {
+  background-image: linear-gradient(to bottom, #55a3fa, #a8cffa);
+
+}
+
 .content {
   display: flex;
   width: 100%;
@@ -23,7 +28,6 @@ a {
   // justify-content: space-evenly;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(to bottom, #55a3fa, #a8cffa);
 
   @media only screen and (max-width: 1200px) {
     padding-top: 2rem;      
