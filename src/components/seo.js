@@ -9,8 +9,9 @@ import React from "react"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
+import logo from "../images/gatsby-icon.png"
 
-function SEO({ description, lang, meta, title }) {
+function SEO({ description, lang, meta, title, image, url }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -20,6 +21,7 @@ function SEO({ description, lang, meta, title }) {
             description
             author
             image
+            url
           }
         }
       }
@@ -29,18 +31,16 @@ function SEO({ description, lang, meta, title }) {
   const metaDescription = description || site.siteMetadata.description
 
   return (
-    <Helmet title={title} >
-
-    <meta property="description" content={SEO.description} />
-    <meta property="image" content={"https://photos.google.com/photo/AF1QipMjek-GQQfY2QP6ifrQ_wsk_SGHcdW0th8ftOJg"} />
-    <meta property="og:image" content={"https://photos.google.com/photo/AF1QipMjek-GQQfY2QP6ifrQ_wsk_SGHcdW0th8ftOJg"} />
-    <meta property="og:title" content={SEO.title} />
-    <meta property="og:description" content={SEO.description} />
-    <meta property="og:type" content={"website"} />
-    {/* <meta property="" content={SEO.description} /> */}
-    <meta property="twitter:description" content={metaDescription} />
-    <meta property="twitter:title" content={title} />
-
+    <Helmet title={title}>
+      <meta property="description" content={SEO.description} />
+      <meta property="image" content={`${url}/${image}`} />
+      <meta property="og:image" content={`${url}/${image}`} />
+      <meta property="og:title" content={SEO.title} />
+      <meta property="og:description" content={SEO.description} />
+      <meta property="og:type" content={"website"} />
+      {/* <meta property="" content={SEO.description} /> */}ls
+      <meta property="twitter:description" content={metaDescription} />
+      <meta property="twitter:title" content={title} />
     </Helmet>
     // <Helmet
     //   htmlAttributes={{

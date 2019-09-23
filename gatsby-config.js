@@ -3,7 +3,7 @@ module.exports = {
     title: `Web Developer`,
     description: 'rm -rf bad_things.* && touch good_things.js',
     author: `Chance Embrey-Farquhar`,
-    image: `https://photos.google.com/photo/AF1QipMjek-GQQfY2QP6ifrQ_wsk_SGHcdW0th8ftOJg`,
+    image: "gatsby-icon.png",
     url: 'https://chancehalo.me',
     twitterUsername: '@ChanceHalo'
   },
