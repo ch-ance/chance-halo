@@ -10,7 +10,7 @@ const ContactPage = () => {
     }, 2200)
   })
   return (
-    <section className="contact content">
+    <section className="contact content" id="contact">
       <ul className="contact-links">
         <li>
           <a href="tel:+18163856369">

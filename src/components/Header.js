@@ -9,7 +9,6 @@ const Header = () => {
       <h2>Software Engineer, Full-Stack Web Developer</h2>
       <div className="buttons">
         <Button to="#projects" />
-        {/* <Button to="contact" /> */}
       </div>
     </header>
   )

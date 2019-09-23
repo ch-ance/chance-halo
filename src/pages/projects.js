@@ -8,6 +8,7 @@ import snj from "../images/snj.gif"
 import impython from "../images/impython.gif"
 import nodebe from "../images/nodebe.gif"
 import port from "../images/portfolio.gif"
+import Button from "../components/Button"
 
 const Projects = () => {
   useEffect(() => {
@@ -83,6 +84,7 @@ const Projects = () => {
         setProjectIndex={setProjectIndex}
         projectIndex={projectIndex}
       />
+      <Button to="#contact"/>
     </section>
   )
 }
