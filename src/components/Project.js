@@ -17,8 +17,8 @@ const Project = ({ project, setProjectIndex, projectIndex }) => {
         </p>
         <p>
           <ul>
-            <li className={project.url === "none" ? "noUrl" : null}><a target="_blank" rel="noopener noreferrer" href={project.url}>{project.url}</a></li>
-            <li><a target="_blank" rel="noopener noreferrer" href={project.github}>{project.github}</a></li>
+            <li className={project.url === "none" ? "noUrl" : null}><a target="_blank" rel="noopener noreferrer" href={project.url}>Visit Site</a></li>
+            <li><a target="_blank" rel="noopener noreferrer" href={project.github}>View Code</a></li>
           </ul>
         </p>
       </div>

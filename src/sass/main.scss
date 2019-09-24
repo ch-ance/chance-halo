@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 html {
   scroll-behavior: smooth;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Exo", sans-serif;
   letter-spacing: 0.2rem;
   line-height: 1.6rem;
 }
@@ -17,7 +17,23 @@ a {
 
 .container {
   // background-image: linear-gradient(to bottom, #55a3fa, #a8cffa);
-  background-color: whitesmoke;
+  // background-color: whitesmoke;
+  color: #fff;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .content {
@@ -45,6 +61,23 @@ a {
     align-items: center;
     font-weight: bold;
     font-size: 0.8rem * 1.25;
+
+    .downArrow {
+      border: solid black;
+      border-width: 0 3px 3px 0;
+      padding: 3px;
+      margin: 0 7.5%;
+      display: inline-block;
+      transform: rotate(45deg);
+      color: red;
+      position: relative;
+      margin: 0 auto;
+      text-align: center;
+      animation: jump 1.5s infinite;
+    }
+    @keyframes jump {
+      0% { top: 0px; } 50% { top: 15px; } 100% { top: 0; }
+    }
 
     @media only screen and (max-width: 700px) {
       width: 50%;
@@ -74,6 +107,7 @@ a {
     letter-spacing: 0.1rem;
     line-height: normal;
     text-align: center;
+    font-weight: 300;
     @media only screen and (max-width: 700px) {
       font-size: 2.4rem;
     }
@@ -84,6 +118,7 @@ a {
     line-height: normal;
     letter-spacing: normal;
     text-align: center;
+    font-weight: 100;
     @media only screen and (max-width: 700px) {
       font-size: 2rem;
     }
@@ -91,6 +126,7 @@ a {
 
   h3 {
     font-size: 1.8rem;
+    font-weight: 200;
   }
 
   .top-link-buttons {
@@ -257,10 +293,13 @@ a {
 
       li {
         color: blue;
-        text-decoration: underline;
-        margin: 6% 0;
+        background: white;
+        // text-decoration: underline;
+        margin: 12% 0;
+        padding: 5px;
+        border-radius: 5px;
         word-wrap: break-word;
-        letter-spacing: 0rem;
+        letter-spacing: 0.1rem;
         list-style: none;
         text-align: center;
       }
