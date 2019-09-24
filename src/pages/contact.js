@@ -1,7 +1,7 @@
 import React, { useEffect } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faMobileAlt, faEnvelope } from "@fortawesome/free-solid-svg-icons"
-import { faGithub, faLinkedin, faTwitter } from "@fortawesome/free-brands-svg-icons"
+import { faGithub, faLinkedin, faTwitter, faDev } from "@fortawesome/free-brands-svg-icons"
 const ContactPage = () => {
   useEffect(() => {
     setTimeout(() => {
@@ -70,6 +70,21 @@ const ContactPage = () => {
               cembreyfarquhar
             </h4>
             <FontAwesomeIcon icon={faLinkedin} />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://dev.to/cembreyfarquhar"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <h3>Dev.to</h3>
+            <h4>
+              dev.to/
+              <br />
+              cembreyfarquhar
+            </h4>
+            <FontAwesomeIcon icon={faDev} />
           </a>
         </li>
       </ul>
