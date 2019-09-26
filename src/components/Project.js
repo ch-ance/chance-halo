@@ -32,7 +32,7 @@ const Project = ({ project, setProjectIndex, projectIndex }) => {
 
   function increment(event) {
     event.preventDefault();
-    projectIndex <= 4 ? setProjectIndex(projectIndex + 1) : setProjectIndex(0)
+    projectIndex <= 3 ? setProjectIndex(projectIndex + 1) : setProjectIndex(0)
   }
 }
 

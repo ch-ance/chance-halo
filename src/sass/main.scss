@@ -246,8 +246,9 @@ a {
       color: black;
       box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
         0 10px 10px rgba(0, 0, 0, 0.22);
-      @media only screen and (max-width: 700px) {
+      @media only screen and (max-width: 1200px) {
         max-width: 100%;
+        flex-direction: row;
       }
       h2 {
         font-size: 3rem;
@@ -335,7 +336,7 @@ a {
       letter-spacing: 0.1rem;
 
       @media only screen and (max-width: 700px) {
-        font-size: 0.7rem;
+        font-size: 0.4rem;
       }
     }
     li {

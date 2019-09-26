@@ -49,15 +49,6 @@ const Projects = () => {
       github: "https://github.com/cembreyfarquhar/Node-Back-End-Starter",
     },
     {
-      name: "Chance Halo - My Portfolio",
-      webImageSrc: port,
-      altText: "A GIF of a web application",
-      topInfo:
-        "The site you're on right now! This is my personal portfolio which is designed to showcase some of my work and how to contact me, while maintaining a fairly minimalistic style. Oh, by the way, 'Halo' is my middle name - hence 'Chance Halo'. =)",
-      url: "https://www.chancehalo.me",
-      github: "https://github.com/cembreyfarquhar/chance-halo",
-    },
-    {
       name: "SnJ Architects",
       webImageSrc: snj,
       altText: "A GIF of a web application",
