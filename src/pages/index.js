@@ -1,8 +1,8 @@
 import React, { useEffect } from "react"
 import SEO from "../components/seo"
 import Header from "../components/Header"
-import Projects from "../pages/projects";
-import Contact from "../pages/contact";
+import Projects from "../pages/projects"
+import Contact from "../pages/contact"
 
 const IndexPage = () => {
   useEffect(() => {
@@ -17,8 +17,8 @@ const IndexPage = () => {
         title="Chance Halo"
         description="Personal site for Chance Embrey-Farquhar"
       />
-      <Header />
-      <Projects />
+      {/* <Header />
+      <Projects /> */}
       <Contact />
     </section>
   )
